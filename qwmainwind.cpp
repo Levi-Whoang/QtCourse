@@ -190,6 +190,6 @@ void QWMainWind::on_actAbout_triggered()
 {//「帮助」菜单 / 工具栏上的「关于」按钮：显示开发者信息
     QMessageBox::about(this,
                        tr("samp2_4"),
-                       tr("开发人员信息：软件工程4班李伟煌")),
-                       tr("学号：2024414290417");
+                       tr("开发人员信息：软件工程4班李伟煌,学号：2024414290417"));
+
 }
