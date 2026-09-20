@@ -1,0 +1,48 @@
+# ---------- Qt 构建产物 ----------
+# qmake/make 的输出，换台机器重新编译就好，不该进版本库
+build/
+build-*/
+debug/
+release/
+Makefile
+Makefile.*
+*.Debug
+*.Release
+.qmake.stash
+
+# uic/moc/rcc 自动生成的代码
+moc_*.cpp
+moc_*.h
+qrc_*.cpp
+ui_*.h
+
+# 编译出的二进制/库
+*.o
+*.obj
+*.exe
+*.dll
+*.a
+*.so
+*.dylib
+
+# 构建脚本临时生成的资源文件（RC_ICONS 用）
+*_resource.rc
+
+# ---------- Qt Creator 个人配置 ----------
+# 这两个跟机器和个人的 kit 绑定，提交了别人打开会报错
+.qtcreator/
+*.pro.user
+*.pro.user.*
+
+# ---------- 原始素材压缩包 ----------
+# 工程源码的重复副本，没必要再存一份
+samp2_4App.zip
+
+# ---------- 本地调试/临时文件 ----------
+_tools/
+_probe.txt
+dpi.txt
+*.tmp
+
+# ---------- AI 助手的工作记忆 ----------
+.workbuddy/
